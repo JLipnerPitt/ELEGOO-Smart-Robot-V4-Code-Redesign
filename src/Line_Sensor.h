@@ -3,6 +3,6 @@
 
 void Line_Sensor_Init(void);
 void Line_Sensor_Start(void);
-void Line_Sensor_Stop(void);
+uint8_t Line_Sensor_End(void);
 
 #endif

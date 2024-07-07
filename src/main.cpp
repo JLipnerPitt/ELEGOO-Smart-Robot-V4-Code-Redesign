@@ -1,18 +1,13 @@
 #include <Arduino.h>
-
-// put function declarations here:
-int myFunction(int, int);
+#include "Line_Sensor.h"
 
 void setup() {
   // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+  Line_Sensor_Init();
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-}
-
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
+  Line_Sensor_Start();
+  Line_Sensor_End();
+  delay(5);
 }
